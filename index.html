@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Learning Management Portal</title>
+    <style>
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f2f5fa;
+            color: #243047;
+        }
+        header {
+            background: #163b70;
+            color: white;
+            padding: 25px 7%;
+        }
+        header h1 { margin: 0 0 8px; }
+        nav {
+            background: #0d2850;
+            padding: 14px 7%;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 22px;
+        }
+        main { padding: 25px 7%; }
+        .welcome {
+            background: white;
+            padding: 22px;
+            border-radius: 10px;
+            border-left: 5px solid #2478d4;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 18px;
+            margin-top: 20px;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px #00000012;
+        }
+        h2 { color: #163b70; }
+        li { margin: 10px 0; }
+        footer {
+            text-align: center;
+            background: #163b70;
+            color: white;
+            padding: 20px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>University Learning Management Portal</h1>
+    <p>Learn • Explore • Achieve</p>
+    <p>Department of Software Engineering</p>
+</header>
+
+<nav>
+    <a href="#courses">Courses</a>
+    <a href="#faculty">Faculty</a>
+    <a href="#resources">Resources</a>
+    <a href="#assignments">Assignments</a>
+    <a href="#exams">Examinations</a>
+</nav>
+
+<main>
+    <section class="welcome">
+        <h2>Welcome to the University LMS</h2>
+        <p>Access course details, faculty information, study materials,
+        assignments and examination schedules in one place.</p>
+    </section>
+
+    <div class="grid">
+        <section class="card" id="courses">
+            <h2>Courses</h2>
+            <ul>
+                <li>Advanced Java Programming</li>
+                <li>Software Configuration Management</li>
+                <li>Cloud Computing and DevOps</li>
+            </ul>
+        </section>
+
+        <section class="card" id="faculty">
+            <h2>Faculty Profiles</h2>
+            <ul>
+                <li>Dr. Priya - Advanced Java</li>
+                <li>Prof. Arun - SCM</li>
+                <li>Dr. Meena - Cloud Computing</li>
+            </ul>
+        </section>
+
+        <section class="card" id="resources">
+            <h2>Learning Resources</h2>
+            <ul>
+                <li>Lecture Notes</li>
+                <li>Programming Practice Materials</li>
+                <li>Cloud Computing Tutorials</li>
+            </ul>
+        </section>
+
+        <section class="card" id="assignments">
+            <h2>Assignment Announcements</h2>
+            <ul>
+                <li>Java Assignment - Due 20 October 2026</li>
+                <li>SCM Report - Due 22 October 2026</li>
+                <li>DevOps Lab - Due 25 October 2026</li>
+            </ul>
+        </section>
+
+        <section class="card" id="exams">
+            <h2>Examination Schedule</h2>
+            <ul>
+                <li>Advanced Java - 28 October 2026</li>
+                <li>SCM - 30 October 2026</li>
+                <li>Cloud Computing - 2 November 2026</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>Contact Information</h2>
+            <p>Email: lms@university.edu</p>
+            <p>Office: Academic Block, Room 101</p>
+        </section>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2026 University Learning Management Portal</p>
+    <p>Application Version: <span id="version">v1</span></p>
+</footer>
+</body>
+</html>
